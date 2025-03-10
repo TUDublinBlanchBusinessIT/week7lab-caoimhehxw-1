@@ -18,8 +18,7 @@
 
 <!-- Memberid Field -->
 <div class="form-group col-sm-6">
-    {!! Form::label('memberid', 'Memberid:') !!}
-    {!! Form::number('memberid', null, ['class' => 'form-control']) !!}
+ <input type="text" name="memberid" value="{{Auth::user()->member->id}}">
 </div>
 
 <!-- Courtid Field -->
